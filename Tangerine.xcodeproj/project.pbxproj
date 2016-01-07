@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EBB2D5D81C3EB82700631C30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB2D5D71C3EB82700631C30 /* AppDelegate.swift */; };
+		EBB2D5DA1C3EB82700631C30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB2D5D91C3EB82700631C30 /* ViewController.swift */; };
+		EBB2D5DC1C3EB82700631C30 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB2D5DB1C3EB82700631C30 /* Document.swift */; };
+		EBB2D5DF1C3EB82700631C30 /* Document.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBB2D5DD1C3EB82700631C30 /* Document.xcdatamodeld */; };
+		EBB2D5E11C3EB82700631C30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB2D5E01C3EB82700631C30 /* Assets.xcassets */; };
+		EBB2D5E41C3EB82700631C30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB2D5E21C3EB82700631C30 /* Main.storyboard */; };
+		EBB2D5EF1C3EB82800631C30 /* TangerineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB2D5EE1C3EB82800631C30 /* TangerineTests.swift */; };
+		EBB2D5FA1C3EB82800631C30 /* TangerineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB2D5F91C3EB82800631C30 /* TangerineUITests.swift */; };
+		EBB2D6081C3EC95700631C30 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB2D6071C3EC95700631C30 /* WindowController.swift */; settings = {ASSET_TAGS = (); }; };
+		EBB2D60A1C3ED53100631C30 /* CenterContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB2D6091C3ED53100631C30 /* CenterContainerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		EBB2D60C1C3ED62900631C30 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB2D60B1C3ED62900631C30 /* Quartz.framework */; };
+		EBB2D60E1C3ED65400631C30 /* PDFContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB2D60D1C3ED65400631C30 /* PDFContentView.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBB2D5EB1C3EB82800631C30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBB2D5CC1C3EB82700631C30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBB2D5D31C3EB82700631C30;
+			remoteInfo = Tangerine2;
+		};
+		EBB2D5F61C3EB82800631C30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBB2D5CC1C3EB82700631C30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBB2D5D31C3EB82700631C30;
+			remoteInfo = Tangerine2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EBB2D5D41C3EB82700631C30 /* Tangerine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tangerine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB2D5D71C3EB82700631C30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBB2D5D91C3EB82700631C30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EBB2D5DB1C3EB82700631C30 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		EBB2D5DE1C3EB82700631C30 /* Document.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Document.xcdatamodel; sourceTree = "<group>"; };
+		EBB2D5E01C3EB82700631C30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBB2D5E31C3EB82700631C30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBB2D5E51C3EB82700631C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBB2D5EA1C3EB82800631C30 /* Tangerine.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tangerine.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB2D5EE1C3EB82800631C30 /* TangerineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangerineTests.swift; sourceTree = "<group>"; };
+		EBB2D5F01C3EB82800631C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBB2D5F51C3EB82800631C30 /* Tangerine.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tangerine.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB2D5F91C3EB82800631C30 /* TangerineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangerineUITests.swift; sourceTree = "<group>"; };
+		EBB2D5FB1C3EB82800631C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBB2D6071C3EC95700631C30 /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		EBB2D6091C3ED53100631C30 /* CenterContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterContainerViewController.swift; sourceTree = "<group>"; };
+		EBB2D60B1C3ED62900631C30 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		EBB2D60D1C3ED65400631C30 /* PDFContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBB2D5D11C3EB82700631C30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB2D60C1C3ED62900631C30 /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB2D5E71C3EB82800631C30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB2D5F21C3EB82800631C30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBB2D5CB1C3EB82700631C30 = {
+			isa = PBXGroup;
+			children = (
+				EBB2D5D51C3EB82700631C30 /* Products */,
+				EBB2D5D61C3EB82700631C30 /* Tangerine */,
+				EBB2D5ED1C3EB82800631C30 /* TangerineTests */,
+				EBB2D5F81C3EB82800631C30 /* TangerineUITests */,
+				EBB2D60B1C3ED62900631C30 /* Quartz.framework */,
+			);
+			sourceTree = "<group>";
+		};
+		EBB2D5D51C3EB82700631C30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBB2D5D41C3EB82700631C30 /* Tangerine.app */,
+				EBB2D5EA1C3EB82800631C30 /* Tangerine.xctest */,
+				EBB2D5F51C3EB82800631C30 /* Tangerine.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBB2D5D61C3EB82700631C30 /* Tangerine */ = {
+			isa = PBXGroup;
+			children = (
+				EBB2D5D71C3EB82700631C30 /* AppDelegate.swift */,
+				EBB2D5E01C3EB82700631C30 /* Assets.xcassets */,
+				EBB2D6091C3ED53100631C30 /* CenterContainerViewController.swift */,
+				EBB2D5DB1C3EB82700631C30 /* Document.swift */,
+				EBB2D5DD1C3EB82700631C30 /* Document.xcdatamodeld */,
+				EBB2D5E51C3EB82700631C30 /* Info.plist */,
+				EBB2D5E21C3EB82700631C30 /* Main.storyboard */,
+				EBB2D60D1C3ED65400631C30 /* PDFContentView.swift */,
+				EBB2D5D91C3EB82700631C30 /* ViewController.swift */,
+				EBB2D6071C3EC95700631C30 /* WindowController.swift */,
+			);
+			path = Tangerine;
+			sourceTree = "<group>";
+		};
+		EBB2D5ED1C3EB82800631C30 /* TangerineTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBB2D5F01C3EB82800631C30 /* Info.plist */,
+				EBB2D5EE1C3EB82800631C30 /* TangerineTests.swift */,
+			);
+			path = TangerineTests;
+			sourceTree = "<group>";
+		};
+		EBB2D5F81C3EB82800631C30 /* TangerineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EBB2D5FB1C3EB82800631C30 /* Info.plist */,
+				EBB2D5F91C3EB82800631C30 /* TangerineUITests.swift */,
+			);
+			path = TangerineUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBB2D5D31C3EB82700631C30 /* Tangerine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBB2D5FE1C3EB82800631C30 /* Build configuration list for PBXNativeTarget "Tangerine" */;
+			buildPhases = (
+				EBB2D5D01C3EB82700631C30 /* Sources */,
+				EBB2D5D11C3EB82700631C30 /* Frameworks */,
+				EBB2D5D21C3EB82700631C30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tangerine;
+			productName = Tangerine2;
+			productReference = EBB2D5D41C3EB82700631C30 /* Tangerine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBB2D5E91C3EB82800631C30 /* TangerineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBB2D6011C3EB82800631C30 /* Build configuration list for PBXNativeTarget "TangerineTests" */;
+			buildPhases = (
+				EBB2D5E61C3EB82800631C30 /* Sources */,
+				EBB2D5E71C3EB82800631C30 /* Frameworks */,
+				EBB2D5E81C3EB82800631C30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBB2D5EC1C3EB82800631C30 /* PBXTargetDependency */,
+			);
+			name = TangerineTests;
+			productName = Tangerine2Tests;
+			productReference = EBB2D5EA1C3EB82800631C30 /* Tangerine.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EBB2D5F41C3EB82800631C30 /* TangerineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBB2D6041C3EB82800631C30 /* Build configuration list for PBXNativeTarget "TangerineUITests" */;
+			buildPhases = (
+				EBB2D5F11C3EB82800631C30 /* Sources */,
+				EBB2D5F21C3EB82800631C30 /* Frameworks */,
+				EBB2D5F31C3EB82800631C30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBB2D5F71C3EB82800631C30 /* PBXTargetDependency */,
+			);
+			name = TangerineUITests;
+			productName = Tangerine2UITests;
+			productReference = EBB2D5F51C3EB82800631C30 /* Tangerine.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBB2D5CC1C3EB82700631C30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Koji Ota";
+				TargetAttributes = {
+					EBB2D5D31C3EB82700631C30 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					EBB2D5E91C3EB82800631C30 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = EBB2D5D31C3EB82700631C30;
+					};
+					EBB2D5F41C3EB82800631C30 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = EBB2D5D31C3EB82700631C30;
+					};
+				};
+			};
+			buildConfigurationList = EBB2D5CF1C3EB82700631C30 /* Build configuration list for PBXProject "Tangerine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBB2D5CB1C3EB82700631C30;
+			productRefGroup = EBB2D5D51C3EB82700631C30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBB2D5D31C3EB82700631C30 /* Tangerine */,
+				EBB2D5E91C3EB82800631C30 /* TangerineTests */,
+				EBB2D5F41C3EB82800631C30 /* TangerineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBB2D5D21C3EB82700631C30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB2D5E11C3EB82700631C30 /* Assets.xcassets in Resources */,
+				EBB2D5E41C3EB82700631C30 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB2D5E81C3EB82800631C30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB2D5F31C3EB82800631C30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBB2D5D01C3EB82700631C30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB2D60E1C3ED65400631C30 /* PDFContentView.swift in Sources */,
+				EBB2D5DF1C3EB82700631C30 /* Document.xcdatamodeld in Sources */,
+				EBB2D6081C3EC95700631C30 /* WindowController.swift in Sources */,
+				EBB2D5DA1C3EB82700631C30 /* ViewController.swift in Sources */,
+				EBB2D60A1C3ED53100631C30 /* CenterContainerViewController.swift in Sources */,
+				EBB2D5D81C3EB82700631C30 /* AppDelegate.swift in Sources */,
+				EBB2D5DC1C3EB82700631C30 /* Document.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB2D5E61C3EB82800631C30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB2D5EF1C3EB82800631C30 /* TangerineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB2D5F11C3EB82800631C30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB2D5FA1C3EB82800631C30 /* TangerineUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBB2D5EC1C3EB82800631C30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBB2D5D31C3EB82700631C30 /* Tangerine */;
+			targetProxy = EBB2D5EB1C3EB82800631C30 /* PBXContainerItemProxy */;
+		};
+		EBB2D5F71C3EB82800631C30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBB2D5D31C3EB82700631C30 /* Tangerine */;
+			targetProxy = EBB2D5F61C3EB82800631C30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBB2D5E21C3EB82700631C30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBB2D5E31C3EB82700631C30 /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBB2D5FC1C3EB82800631C30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBB2D5FD1C3EB82800631C30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EBB2D5FF1C3EB82800631C30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tangerine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avion-amphibie.Tangerine";
+				PRODUCT_NAME = Tangerine;
+			};
+			name = Debug;
+		};
+		EBB2D6001C3EB82800631C30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tangerine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avion-amphibie.Tangerine";
+				PRODUCT_NAME = Tangerine;
+			};
+			name = Release;
+		};
+		EBB2D6021C3EB82800631C30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TangerineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avion-amphibie.Tangerine2Tests";
+				PRODUCT_NAME = Tangerine;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tangerine.app/Contents/MacOS/Tangerine";
+			};
+			name = Debug;
+		};
+		EBB2D6031C3EB82800631C30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TangerineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avion-amphibie.Tangerine2Tests";
+				PRODUCT_NAME = Tangerine;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tangerine.app/Contents/MacOS/Tangerine";
+			};
+			name = Release;
+		};
+		EBB2D6051C3EB82800631C30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TangerineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avion-amphibie.Tangerine2UITests";
+				PRODUCT_NAME = Tangerine;
+				TEST_TARGET_NAME = Tangerine2;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EBB2D6061C3EB82800631C30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TangerineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avion-amphibie.Tangerine2UITests";
+				PRODUCT_NAME = Tangerine;
+				TEST_TARGET_NAME = Tangerine2;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBB2D5CF1C3EB82700631C30 /* Build configuration list for PBXProject "Tangerine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBB2D5FC1C3EB82800631C30 /* Debug */,
+				EBB2D5FD1C3EB82800631C30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBB2D5FE1C3EB82800631C30 /* Build configuration list for PBXNativeTarget "Tangerine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBB2D5FF1C3EB82800631C30 /* Debug */,
+				EBB2D6001C3EB82800631C30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBB2D6011C3EB82800631C30 /* Build configuration list for PBXNativeTarget "TangerineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBB2D6021C3EB82800631C30 /* Debug */,
+				EBB2D6031C3EB82800631C30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBB2D6041C3EB82800631C30 /* Build configuration list for PBXNativeTarget "TangerineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBB2D6051C3EB82800631C30 /* Debug */,
+				EBB2D6061C3EB82800631C30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EBB2D5DD1C3EB82700631C30 /* Document.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EBB2D5DE1C3EB82700631C30 /* Document.xcdatamodel */,
+			);
+			currentVersion = EBB2D5DE1C3EB82700631C30 /* Document.xcdatamodel */;
+			path = Document.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EBB2D5CC1C3EB82700631C30 /* Project object */;
+}
