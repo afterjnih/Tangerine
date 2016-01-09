@@ -26,7 +26,7 @@ class CenterContainerViewController: NSViewController {
 	}
 	
   override func viewWillAppear() {
-		print("centerContainerViewController viewWillAppear");
+		print("centerContainerViewController viewWillAppear!");
 		let wc = self.view.window!.windowController! as NSWindowController
 		let doc = wc.document as! Document
 		pdf = PDFDocument(URL: doc.url)

@@ -656,6 +656,36 @@
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <toolbar key="toolbar" implicitIdentifier="F9690803-1034-4E4A-99EF-F7D145F7F429" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="EwF-Om-H27">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="R8H-8h-9wa"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="8x3-4J-KwD"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="P3t-qB-lpM"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="e6y-Lp-BYx"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="0mX-pV-pHc"/>
+                                <toolbarItem implicitItemIdentifier="D2BC7DED-435F-4401-8AD8-6F4293803462" label="ページ" paletteLabel="Page" id="fNw-I1-LHV">
+                                    <nil key="toolTip"/>
+                                    <size key="minSize" width="63" height="22"/>
+                                    <size key="maxSize" width="96" height="22"/>
+                                    <textField key="view" verticalHuggingPriority="750" id="MhM-EE-4iC">
+                                        <rect key="frame" x="0.0" y="14" width="63" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="R7U-3T-TLG">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </toolbarItem>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="fNw-I1-LHV"/>
+                                <toolbarItem reference="R8H-8h-9wa"/>
+                                <toolbarItem reference="8x3-4J-KwD"/>
+                                <toolbarItem reference="0mX-pV-pHc"/>
+                                <toolbarItem reference="P3t-qB-lpM"/>
+                            </defaultToolbarItems>
+                        </toolbar>
                     </window>
                     <connections>
                         <segue destination="5gI-5U-AMq" kind="relationship" relationship="window.shadowedContentViewController" id="nsd-lR-9xd"/>
@@ -663,7 +693,7 @@
                 </windowController>
                 <customObject id="6f7-a7-6o1" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="75" y="288"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
