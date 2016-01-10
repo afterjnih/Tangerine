@@ -11,18 +11,13 @@ import Cocoa
 class ViewController: NSViewController {
 
 	override func viewDidLoad() {
-		print("viewController viewDidLoad");
+		print("viewController viewDidLoad")
 		super.viewDidLoad()
 
 		// Do any additional setup after loading the view.
 	}
   override func viewWillAppear() {
-		print("viewController viewWillAppear");
-		let wc = self.view.window!.windowController! as NSWindowController
-		let doc = wc.document as! Document
-//		print(doc.url);
-		self.representedObject = doc
-
+		print("viewController viewWillAppear")
 	}
 	override var representedObject: AnyObject? {
 		didSet {
@@ -31,9 +26,8 @@ class ViewController: NSViewController {
 	}
 
 	override func loadView() {
-		print("viewController loadView");
+		print("viewController loadView")
 		super.loadView()
 	}
 
 }
-

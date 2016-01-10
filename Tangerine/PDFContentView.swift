@@ -18,21 +18,16 @@ class PDFContentView: PDFView {
 	private let jKey: UInt16 = 38
 	private let kKey: UInt16 = 40
 	private let lKey: UInt16 = 37
-	
 	override func drawRect(dirtyRect: NSRect) {
 		super.drawRect(dirtyRect)
-		
 		// Drawing code here.
 	}
-	
 	func currentPageNum() -> Int {
-		return self.currentPage().numberOfCharacters();
+		return self.currentPage().numberOfCharacters()
 	}
-	
 	func currentPageLabel() -> String {
-		return self.currentPage().label();
+		return self.currentPage().label()
 	}
-	
 	override func keyDown(theEvent: NSEvent) {
 		switch theEvent.keyCode {
 		case jKey, lKey, downKey, rightKey :
@@ -43,6 +38,4 @@ class PDFContentView: PDFView {
 			break
 		}
 	}
-	
-	
 }

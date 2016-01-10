@@ -12,13 +12,17 @@ class CenterContainerViewController: NSViewController {
 
 	@IBOutlet weak var contentView: PDFContentView!
 	var pdf: PDFDocument!
-	var wc: WindowController!
+	var windowController: WindowController!
 	override var acceptsFirstResponder: Bool { return true }
   override func viewDidLoad() {
       super.viewDidLoad()
     	let PDFViewChangedPageNotification = "PDFViewChangedPage"
-  		let notificationHandler = NSNotificationCenter.defaultCenter();
-		  notificationHandler.addObserver(self, selector: "getPageNotification:", name: PDFViewChangedPageNotification, object: contentView)
+  		let notificationHandler = NSNotificationCenter.defaultCenter()
+		  notificationHandler.addObserver(
+				self,
+				selector: "getPageNotification:",
+				name: PDFViewChangedPageNotification,
+				object: contentView)
   }
 	override var representedObject: AnyObject? {
 		didSet {
@@ -28,21 +32,25 @@ class CenterContainerViewController: NSViewController {
 	override func loadView() {
 		super.loadView()
 	}
-	
   override func viewWillAppear() {
-		print("centerContainerViewController viewWillAppear!");
-		wc = self.view.window!.windowController! as! WindowController
-		let doc = wc.document as! Document
-		pdf = PDFDocument(URL: doc.url)
-		let outline = pdf.outlineRoot()
-		self.contentView.setDocument(pdf)
+		print("centerContainerViewController viewWillAppear!")
+//		windowController = self.view.window!.windowController! as! WindowController
+//		let doc = windowController.document as! Document
+		windowController = self.view.window!.windowController! as? WindowController
+		if let doc = windowController.document as? Document {
+  		pdf = PDFDocument(URL: doc.url)
+  		self.contentView.setDocument(pdf)
+		}
+//
+//		pdf = PDFDocument(URL: doc.url)
+//		self.contentView.setDocument(pdf)
 	}
-	
 	override func viewDidAppear() {
-		print("ContentViewController viewDidAppear!!");
+		print("ContentViewController viewDidAppear!!")
 	}
-	
 	func getPageNotification(notification: NSNotification) {
-		wc.updatePageLabel(contentView.currentPageLabel());
+		if let windowCt = windowController {
+  		windowCt.updatePageLabel(contentView.currentPageLabel())
+		}
 	}
 }
