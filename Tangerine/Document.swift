@@ -1,18 +1,20 @@
 //
 //  Document.swift
-//  Tangerine2
+//  Tangerine
 //
 //  Created by Koji Ota on 2016/01/08.
 //  Copyright © 2016年 Koji Ota. All rights reserved.
 //
 
 import Cocoa
+import Quartz
 
 class Document: NSPersistentDocument {
 	var url: NSURL?
+
 	override init() {
 		print("Document init");
-	    super.init()
+    super.init()
 		// Add your subclass-specific initialization here.
 	}
 
@@ -37,5 +39,6 @@ class Document: NSPersistentDocument {
 		print("Document readFromURL");
 		setValue(url, forKey: "url");
 	}
+	
 
 }

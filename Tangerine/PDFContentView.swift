@@ -1,6 +1,6 @@
 //
 //  PDFContentView.swift
-//  Tangerine2
+//  Tangerine
 //
 //  Created by Koji Ota on 2016/01/08.
 //  Copyright © 2016年 Koji Ota. All rights reserved.
@@ -24,9 +24,16 @@ class PDFContentView: PDFView {
 		
 		// Drawing code here.
 	}
+	
+	func currentPageNum() -> Int {
+		return self.currentPage().numberOfCharacters();
+	}
+	
+	func currentPageLabel() -> String {
+		return self.currentPage().label();
+	}
+	
 	override func keyDown(theEvent: NSEvent) {
-		Swift.print("pdfview")
-		Swift.print(theEvent.keyCode)
 		switch theEvent.keyCode {
 		case jKey, lKey, downKey, rightKey :
 			goToNextPage(self.document())
@@ -36,4 +43,6 @@ class PDFContentView: PDFView {
 			break
 		}
 	}
+	
+	
 }

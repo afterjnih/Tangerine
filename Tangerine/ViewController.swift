@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Tangerine2
+//  Tangerine
 //
 //  Created by Koji Ota on 2016/01/08.
 //  Copyright © 2016年 Koji Ota. All rights reserved.
