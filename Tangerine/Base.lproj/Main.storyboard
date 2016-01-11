@@ -674,6 +674,9 @@
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <connections>
+                                                <action selector="goTo:" target="jGA-0Y-lOj" id="03u-85-NnJ"/>
+                                            </connections>
                                         </textFieldCell>
                                     </textField>
                                 </toolbarItem>

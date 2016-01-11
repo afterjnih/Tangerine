@@ -11,7 +11,7 @@ import Quartz
 
 class Document: NSPersistentDocument {
 	var url: NSURL?
-
+	var labelPage: [String: Int]?
 	override init() {
 		print("Document init")
     super.init()
@@ -39,5 +39,18 @@ class Document: NSPersistentDocument {
 	override func readFromURL(url: NSURL, ofType typeName: String) throws {
 		print("Document readFromURL")
 		setValue(url, forKey: "url")
+		labelPage = labelPages(PDFDocument(URL: url))
+		print(PDFDocument(URL: url).outlineRoot())
+		print(PDFDocument(URL: url).pageCount())
+		print(PDFDocument(URL: url).pageAtIndex(416))
+		print(PDFDocument(URL: url).outlineRoot().childAtIndex(2))
+	}
+	func labelPages(pdfDocument: PDFDocument) -> [String: Int] {
+		let pageNum = pdfDocument.pageCount()
+		var labelPage: Dictionary<String, Int> = [:]
+		for var pageCount = 0;  pageCount < pageNum; ++pageCount {
+			labelPage[pdfDocument.pageAtIndex(pageCount).label()] = pageCount
+		}
+		return labelPage
 	}
 }

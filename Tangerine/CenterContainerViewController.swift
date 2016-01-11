@@ -8,7 +8,7 @@
 
 import Cocoa
 import Quartz
-class CenterContainerViewController: NSViewController {
+class CenterContainerViewController: NSViewController, WindowControllerDelegate {
 
 	@IBOutlet weak var contentView: PDFContentView!
 	var pdf: PDFDocument!
@@ -34,16 +34,12 @@ class CenterContainerViewController: NSViewController {
 	}
   override func viewWillAppear() {
 		print("centerContainerViewController viewWillAppear!")
-//		windowController = self.view.window!.windowController! as! WindowController
-//		let doc = windowController.document as! Document
 		windowController = self.view.window!.windowController! as? WindowController
+		windowController.delegate = self
 		if let doc = windowController.document as? Document {
   		pdf = PDFDocument(URL: doc.url)
   		self.contentView.setDocument(pdf)
 		}
-//
-//		pdf = PDFDocument(URL: doc.url)
-//		self.contentView.setDocument(pdf)
 	}
 	override func viewDidAppear() {
 		print("ContentViewController viewDidAppear!!")
@@ -51,6 +47,15 @@ class CenterContainerViewController: NSViewController {
 	func getPageNotification(notification: NSNotification) {
 		if let windowCt = windowController {
   		windowCt.updatePageLabel(contentView.currentPageLabel())
+		}
+	}
+	func whichPage(pageLabel: String) {
+		if let doc = windowController.document as? Document {
+			if let labelPage = doc.labelPage {
+				if let label = labelPage[pageLabel] {
+    			self.contentView.goToPage(pdf.pageAtIndex(label))
+				}
+			}
 		}
 	}
 }
