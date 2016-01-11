@@ -40,10 +40,6 @@ class Document: NSPersistentDocument {
 		print("Document readFromURL")
 		setValue(url, forKey: "url")
 		labelPage = labelPages(PDFDocument(URL: url))
-		print(PDFDocument(URL: url).outlineRoot())
-		print(PDFDocument(URL: url).pageCount())
-		print(PDFDocument(URL: url).pageAtIndex(416))
-		print(PDFDocument(URL: url).outlineRoot().childAtIndex(2))
 	}
 	func labelPages(pdfDocument: PDFDocument) -> [String: Int] {
 		let pageNum = pdfDocument.pageCount()
