@@ -1,0 +1,4 @@
+included:
+    - Tangerine
+excluded:
+    - Pods
